@@ -4,3 +4,4 @@ require "xploitlib/sock"
 require "xploitlib/util"
 
 include Xploitlib
+include ::Pack
