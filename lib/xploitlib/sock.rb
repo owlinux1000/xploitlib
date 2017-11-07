@@ -7,7 +7,7 @@ module Xploitlib
   class SendError < StandardError; end
   class RecvError < StandardError; end
    
-  class PwnSock
+  class Sock
    
     attr_accessor :debug, :timeout
     
@@ -20,11 +20,11 @@ module Xploitlib
    
     def self.open(host, port, timeout = nil, debug = false)
       if block_given?
-        s = PwnSock.new(host, port, timeout, debug)
+        s = Sock.new(host, port, timeout, debug)
         yield(s)
         s.close
       else
-        PwnSock.new(host, port, timeout, debug)
+        Sock.new(host, port, timeout, debug)
       end
     end
    
