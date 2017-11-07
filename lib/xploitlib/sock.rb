@@ -49,6 +49,7 @@ module Xploitlib
     def recv(n = nil, delim = nil, debug = false)
       
       @debug = debug
+      puts "[ \e[35mRECV\e[0m ]" if @debug
       
       unless n.nil?
         res = @sock.read(n)
@@ -57,8 +58,6 @@ module Xploitlib
       end
       
       res = ""
-      
-      puts "[ \e[35mRECV\e[0m ]" if @debug
       while select([@sock], nil, nil,timeout=@timeout)
         s = @sock.read(1)
         raise RecvError if s.length != 1
