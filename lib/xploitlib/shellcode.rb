@@ -1,3 +1,5 @@
+# coding: ascii-8bit
+
 module Xploitlib
 
   module Shellcode
