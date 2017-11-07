@@ -53,7 +53,7 @@ module Xploitlib
       
       unless n.nil?
         res = @sock.read(n)
-        Hexdump.dump(res)
+        Hexdump.dump(res) if @debug
         return res
       end
       
