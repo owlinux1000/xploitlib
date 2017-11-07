@@ -7,4 +7,3 @@ require "xploitlib/libc"
 
 include Xploitlib
 include ::Pack
-include ::Libc
