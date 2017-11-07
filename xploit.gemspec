@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Exploitation library for rubyist.}
   spec.description   = %q{Exploitation library for rubyist.}
-  spec.homepage      = "https://github.com/owlinux1000/xploit"
+  spec.homepage      = "https://github.com/owlinux1000/xploitlib"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
