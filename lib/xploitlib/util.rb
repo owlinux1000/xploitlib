@@ -1,3 +1,4 @@
+# coding: ascii-8bit
 module Xploitlib
 
   module Pack
