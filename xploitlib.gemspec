@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Chihiro Hasegawa"]
   spec.email         = ["pgm3rdlinuxor1000@gmail.com"]
 
-  spec.summary       = %q{Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{Write a longer description or delete this line.}
-  spec.homepage      = "https://alicemacs.come"
+  spec.summary       = %q{Exploitation library for rubyist.}
+  spec.description   = %q{Exploitation library for rubyist.}
+  spec.homepage      = "https://github.com/owlinux1000/xploitlib"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
