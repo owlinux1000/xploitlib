@@ -99,5 +99,3 @@ module Xploitlib
   end
   
 end
-
-include Xploitlib::Pack
