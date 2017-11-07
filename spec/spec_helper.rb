@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "xploitlib"
+require "xploit"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

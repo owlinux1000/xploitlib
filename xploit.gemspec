@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "xploitlib/version"
+require "xploit/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "xploitlib"
-  spec.version       = Xploitlib::VERSION
+  spec.name          = "xploit"
+  spec.version       = Xploit::VERSION
   spec.authors       = ["Chihiro Hasegawa"]
   spec.email         = ["pgm3rdlinuxor1000@gmail.com"]
 
   spec.summary       = %q{Exploitation library for rubyist.}
   spec.description   = %q{Exploitation library for rubyist.}
-  spec.homepage      = "https://github.com/owlinux1000/xploitlib"
+  spec.homepage      = "https://github.com/owlinux1000/xploit"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
