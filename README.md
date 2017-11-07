@@ -25,3 +25,7 @@ Sock.open(host, port) do |s|
   
 end
 ```
+
+## Dependency
+
+* [GNU Binutils](https://www.gnu.org/software/binutils/)
