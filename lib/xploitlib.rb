@@ -3,4 +3,3 @@ require "xploitlib/version"
 require "xploitlib/sock"
 
 include Xploitlib
-include Xploitlib::Pack
