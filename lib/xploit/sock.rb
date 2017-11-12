@@ -63,7 +63,7 @@ module Xploit
         s = @sock.read(1)
         raise RecvError if s.length != 1
         res << s
-        return res if not delim.nil? and res.include?(delim)
+        break res if not delim.nil? and res.include?(delim)
       end
       
       Hexdump.dump(res) if @debug
