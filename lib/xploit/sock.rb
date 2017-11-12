@@ -29,9 +29,7 @@ module Xploit
       end
     end
    
-    def send(data, debug = false)
-      
-      @debug = debug
+    def send(data)
       
       puts "[\e[34m SEND \e[0m]" if @debug
       len = @sock.write(data)
@@ -43,13 +41,12 @@ module Xploit
    
     end
    
-    def sendline(msg, debug = false)
-      send(msg + "\n", debug = debug)
+    def sendline(msg)
+      send(msg + "\n")
     end
    
-    def recv(n = nil, delim = nil, debug = false)
+    def recv(n = nil, delim = nil)
       
-      @debug = debug
       puts "[ \e[35mRECV\e[0m ]" if @debug
       
       unless n.nil?
@@ -72,19 +69,19 @@ module Xploit
       
     end
    
-    def recvuntil(delim, debug = false)
-      self.recv(n = nil, delim, debug)
+    def recvuntil(delim)
+      self.recv(n = nil, delim)
     end
    
-    def recvline(debug = false)
-      recvuntil("\n", debug)
+    def recvline()
+      recvuntil("\n")
     end
     
     def shell
       STDOUT.sync = true
       while s = STDIN.gets
-        self.send(s, @debug)
-        puts self.recv(n = nil, delim = nil, debug = @debug)
+        self.send(s)
+        puts self.recv(n = nil, delim = nil)
       end
     end
    
