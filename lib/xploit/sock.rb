@@ -81,7 +81,7 @@ module Xploit
       STDOUT.sync = true
       while s = STDIN.gets
         self.send(s)
-        puts self.recv(n = nil, delim = nil)
+        puts self.recv
       end
     end
    
