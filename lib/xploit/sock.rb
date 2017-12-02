@@ -70,7 +70,7 @@ module Xploit
     end
    
     def recvuntil(delim)
-      self.recv(n = nil, delim)
+      recv(n = nil, delim)
     end
    
     def recvline()
